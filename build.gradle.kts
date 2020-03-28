@@ -43,10 +43,5 @@ tasks.test {
     testLogging {
         events("passed", "skipped", "failed")
     }
+    maxParallelForks = (Runtime.getRuntime().availableProcessors() / 2)
 }
-
-//tasks.jar {
-//    manifest {
-//        attributes("Main-Class" to "io.vrto.movielist.MovieListKt")
-//    }
-//}
