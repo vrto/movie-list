@@ -18,7 +18,7 @@ class Csfd(val credentials: CsfdCredentials) {
 
     fun loadIndex() = Jsoup.connect("https://www.csfd.cz").get()
 
-    fun homePage(): Response = Jsoup.connect("https://cas.csfd.cz/login?s=aHR0cHM6Ly93d3cuY3NmZC5jei8%3D")
+    fun homePage(): Response = Jsoup.connect("https://cas.csfd.cz/login?s=Vzu0qUOmByjiKP93q3phL3AzMP5wryjiVt%3D%3D")
         .data("username", credentials.login)
         .data("password", credentials.pw)
         .method(POST)
